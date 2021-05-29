@@ -108,7 +108,7 @@ void http_conn::init() {
     m_url = nullptr;
     m_version = nullptr;
     m_host = nullptr;
-    m_linger = true;
+    m_linger = false;
     m_content_length = 0;
     m_file_address = nullptr;          
     
