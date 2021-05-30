@@ -60,6 +60,25 @@ http://xxx.xxx.xxx.xxx:***/index.html //xxx.xxx.xxx.xxx:***为ip+端口号
 如：http://192.168.137.11:10000/index.html
 ```
 
+#### 压力测试结果
+
+- 使用webbench对服务器的并发访问进行测试
+
+```c++
+./webbench -c 10000 -t 5 http://10.24.88.50:10000/index.html
+// 10000个客户端访问5秒
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+
+Benchmarking: GET http://10.24.88.50:10000/index.html
+10000 clients, running 5 sec.
+
+Speed=969048 pages/min, 2567977 bytes/sec.
+Requests: 80754 susceed, 0 failed.
+```
+
+- 结果表明，服务器可以承受近万访问请求。
+
 #### 参考
 
 - [B站视频](https://www.bilibili.com/video/BV1iJ411S7UA?from=search&seid=16481824339543181936)
