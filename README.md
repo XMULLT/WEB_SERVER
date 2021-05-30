@@ -62,6 +62,10 @@ http://xxx.xxx.xxx.xxx:***/index.html //xxx.xxx.xxx.xxx:***为ip+端口号
 
 #### 压力测试结果
 
+- 测试环境：
+  - 电脑型号：神舟战神Z7M-KP7Z
+  - 内存：16G
+  - 系统：kubantu-20.04
 - 使用webbench对服务器的并发访问进行测试
 
 ```c++
